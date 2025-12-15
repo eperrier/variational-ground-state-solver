@@ -1,0 +1,41 @@
+site_name: PSITest WebApp
+site_description: Variational and finite-difference solvers for 1D Schrödinger problems (Streamlit webapp)
+repo_name: psitest-webapp
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Running:
+      - Docker: running-with-docker.md
+      - Local (no Docker): running-locally.md
+  - Experiments:
+      - Ground state (variational): experiments/ground-state.md
+      - Excited states: experiments/excited-states.md
+      - Hyperparameter sweep: experiments/hyperparameter-sweep.md
+      - Eigensolver (finite difference): experiments/eigensolver.md
+      - Trace browser: experiments/trace-browser.md
+  - Reference:
+      - Potentials: reference/potentials.md
+      - Models and ansätze: reference/models.md
+      - Training settings: reference/training.md
+      - Outputs and traceability: reference/outputs-and-trace.md
+      - Reproduce runs (CLI): reference/reproducibility-cli.md
+  - Concepts:
+      - Variational method: concepts/variational-principle.md
+      - Discretization and numerics: concepts/discretization.md
+      - Excited states and orthogonality: concepts/orthogonality.md
+  - Troubleshooting: troubleshooting.md
