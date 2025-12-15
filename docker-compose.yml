@@ -1,0 +1,10 @@
+services:
+  psitest:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - "PSITEST_OUTPUT_DIR=1 - RESEARCH/PSITest"
+    volumes:
+      # Persist all outputs to the host directory ./outputs
+      - "./outputs:/workspace/1 - RESEARCH/PSITest"

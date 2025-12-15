@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.venv
+venv
+build
+dist
+outputs
+1 - RESEARCH
+.ipynb_checkpoints

@@ -1,0 +1,5 @@
+services:
+  psitest:
+    # Requires NVIDIA Container Toolkit.
+    # Compose v2 supports the 'gpus' key.
+    gpus: all
